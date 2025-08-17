@@ -1,0 +1,20 @@
+{
+  "name": "teaching-pdf-generator",
+  "version": "1.0.0",
+  "description": "Paste content into HTML and generate a styled A4 PDF with one command.",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "keywords": [
+    "pdf",
+    "puppeteer",
+    "education",
+    "printing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}

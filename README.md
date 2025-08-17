@@ -41,5 +41,49 @@ This project uses NBA player data to build and evaluate a **Random Forest Regres
 
 ---
 
+## Teaching PDF Generator
+
+Paste your lesson content into a single file and generate a clean, A4, print-ready PDF with one command.
+
+### Quick Start
+
+1) Install dependencies
+
+```bash
+npm install
+```
+
+2) Add or replace content
+
+- Edit `content/content.html` only. Paste your text and use minimal HTML for structure:
+  - Title: `<h1 class="title">Your Big Title</h1>`
+  - Section headings: `<h1>...</h1>` or `<h2>...</h2>`
+  - Paragraphs: `<p>...</p>`
+  - Exercises: wrap questions in an `.exercise` block; questions are auto-numbered
+    ```html
+    <div class="exercise">
+      <p>Prompt text...</p>
+      <div class="question"><p>Question 1</p></div>
+      <div class="question"><p>Question 2</p></div>
+    </div>
+    ```
+  - Optional page break anywhere: `<div class="page-break"></div>`
+
+3) Generate the PDF
+
+```bash
+npm run generate
+```
+
+- Output: `output/output.pdf`
+
+### Styling
+
+- Clean fonts: Lato and Roboto via Google Fonts
+- A4 page size, generous margins, print backgrounds enabled
+- Big centered title, consistent headings, easy-to-read body
+- Exercises: numbered, indented questions, light background box, avoids splitting across pages
+
+You only ever edit `content/content.html`. The template and styles are injected automatically.
 
 ---
